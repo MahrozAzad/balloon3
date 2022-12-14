@@ -84,6 +84,7 @@ function draw() {
   game goes to "END" state 
   when red balloon is hit*/
   if (arrowGroup.isTouching(redB)) {
+    redB.destroyEach();
     gameState = END
   }
   //if (arrowGroup.Collide(redB)) 
